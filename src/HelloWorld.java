@@ -9,8 +9,12 @@ public class HelloWorld {
 //        TwoSum twoSum = new TwoSum();
 //        int a[] = twoSum.twoSum(new int[]{1, 2, 5, 6, 7}, 9);
 //        System.out.println(a[0] + "  " + a[1]);
-        JewelsAndStones jewelsAndStones = new JewelsAndStones();
-        System.out.println("No Of jewsels:" + jewelsAndStones.numJewelsInStones("aA","aAAbbbb"));
+
+//        JewelsAndStones jewelsAndStones = new JewelsAndStones();
+//        System.out.println("No Of jewsels:" + jewelsAndStones.numJewelsInStones("aA","aAAbbbb"));
+
+         N_Repeated_Element_in_Size_2N_Array n = new N_Repeated_Element_in_Size_2N_Array();
+         System.out.println("Output : "+n.repeatedNTimes(new int[]{1, 2, 3, 2, 2, 2}));
 
     }
 
