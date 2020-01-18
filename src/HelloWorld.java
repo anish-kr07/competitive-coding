@@ -15,8 +15,11 @@ public class HelloWorld {
 //         N_Repeated_Element_in_Size_2N_Array n = new N_Repeated_Element_in_Size_2N_Array();
 //         System.out.println("Output : "+n.repeatedNTimes(new int[]{1, 2, 3, 2, 2, 2}));
 
-        FindCommonCharacters findCommonCharacters = new FindCommonCharacters();
-        findCommonCharacters.commonChars(new String[]{"bella","label","roller"});
+//        FindCommonCharacters findCommonCharacters = new FindCommonCharacters();
+//        findCommonCharacters.commonChars(new String[]{"bella","label","roller"});
+
+        UniqueNumberOfOccurrences1207 obj = new UniqueNumberOfOccurrences1207();
+        obj.uniqueOccurrences(new int[]{1,2,2,1,1,3});
     }
 
 }
