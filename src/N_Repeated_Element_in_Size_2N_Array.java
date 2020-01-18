@@ -9,6 +9,11 @@ public class N_Repeated_Element_in_Size_2N_Array {
                 return i;
             }
         }
+//        pigenhole algo
+//        for(int i=0;i< A.length;i++){
+//            if(A[i] == A[i+1] || A[i]==A[i+2])
+//                return A[i];
+//        }
         return 0;
     }
 }
