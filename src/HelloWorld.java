@@ -1,27 +1,27 @@
-import java.util.stream.IntStream;
+import LeetCode.SubdomainVisitCount811;
 
 public class HelloWorld {
 
     public static void main(String args[]) {
         System.out.println("HI... I am Anish and this is my  Hello World program");
 
-//        TwoSum twoSum = new TwoSum();
+//        LeetCode.TwoSum twoSum = new LeetCode.TwoSum();
 //        int a[] = twoSum.twoSum(new int[]{1, 2, 5, 6, 7}, 9);
 //        System.out.println(a[0] + "  " + a[1]);
 
-//        JewelsAndStones jewelsAndStones = new JewelsAndStones();
+//        LeetCode.JewelsAndStones jewelsAndStones = new LeetCode.JewelsAndStones();
 //        System.out.println("No Of jewsels:" + jewelsAndStones.numJewelsInStones("aA","aAAbbbb"));
 
-//         N_Repeated_Element_in_Size_2N_Array n = new N_Repeated_Element_in_Size_2N_Array();
+//         LeetCode.N_Repeated_Element_in_Size_2N_Array n = new LeetCode.N_Repeated_Element_in_Size_2N_Array();
 //         System.out.println("Output : "+n.repeatedNTimes(new int[]{1, 2, 3, 2, 2, 2}));
 
-//        FindCommonCharacters findCommonCharacters = new FindCommonCharacters();
+//        LeetCode.FindCommonCharacters findCommonCharacters = new LeetCode.FindCommonCharacters();
 //        findCommonCharacters.commonChars(new String[]{"bella","label","roller"});
 
-//        UniqueNumberOfOccurrences1207 obj = new UniqueNumberOfOccurrences1207();
+//        LeetCode.UniqueNumberOfOccurrences1207 obj = new LeetCode.UniqueNumberOfOccurrences1207();
 //        obj.uniqueOccurrences(new int[]{1,2,2,1,1,3});
 
-//        FindWordsThatCanBeFormedByCharacters1160 obj = new FindWordsThatCanBeFormedByCharacters1160();
+//        LeetCode.FindWordsThatCanBeFormedByCharacters1160 obj = new LeetCode.FindWordsThatCanBeFormedByCharacters1160();
 //        obj.countCharacters(new String[]{"cat","bt","hat","tree"},"atach");
 
           SubdomainVisitCount811 obj = new SubdomainVisitCount811();

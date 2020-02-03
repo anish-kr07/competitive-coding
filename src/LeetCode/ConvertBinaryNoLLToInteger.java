@@ -1,3 +1,5 @@
+package LeetCode;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -25,7 +27,6 @@ public class ConvertBinaryNoLLToInteger {
 //        return binary;
 //        Method 2
 //    public int getDecimalValue(ListNode head) {
-//        ListNode current = head;
 //        int binary = 0;
 //        while(head != null){
 //            binary = (binary << 1) | head.val;
