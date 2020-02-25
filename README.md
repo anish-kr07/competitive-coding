@@ -1,2 +1,6 @@
 # leetcode
-leetcode problem's solutions
+This repo conatins following items : 
+
+#leetcode problem's solutions
+#DataStructure Implementations
+#DesignPattern Implementaions
