@@ -1,6 +1,6 @@
 package DesignPattern.Builder;
 
-//builder patter
+//builder pattern
 public class LunchOrderBuilder {
 
     public static class Builder {
