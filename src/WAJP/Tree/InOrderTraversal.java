@@ -55,10 +55,10 @@ public class InOrderTraversal {
         tree.root.right.left = new TreeNode(6);
         tree.root.right.right = new TreeNode(7);
         List<Integer> inOrderTraversalList = tree.inOrderTraversalRecursive(tree.root);
-        System.out.println("****PreOrderTraversalRecursive****");
+        System.out.println("****InOrderTraversalRecursive****");
         System.out.println(inOrderTraversalList);
         inOrderTraversalList = tree.inOrderTraversalIterative(tree.root);
-        System.out.println("****PreOrderTraversalIterative****");
+        System.out.println("****InOrderTraversalIterative****");
         System.out.println(inOrderTraversalList);
     }
 
