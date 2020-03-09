@@ -2,6 +2,7 @@ package WAJP.Tree;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 class Node
 {
@@ -15,7 +16,7 @@ class Node
     }
 }
 
-public class TreePreOrdertraversal {
+class TreePreOrdertraversal {
     // Root of Binary Tree
     Node root;
 
@@ -25,6 +26,16 @@ public class TreePreOrdertraversal {
     }
 
     public List<Integer> preorderTraversalRecursive(Node root) {
+        List<Integer> preOrderTraversal = new ArrayList<>();
+        if(root == null)
+            return preOrderTraversal;
+        preOrderTraversal.add(root.val);
+        preOrderTraversal.addAll(preorderTraversalRecursive(root.left));
+        preOrderTraversal.addAll(preorderTraversalRecursive(root.right));
+        return preOrderTraversal;
+
+    }
+    public List<Integer> preorderTraversalIterative(Node root) {
         List<Integer> preOrderTraversal = new ArrayList<>();
         if(root == null)
             return preOrderTraversal;
@@ -45,7 +56,10 @@ public class TreePreOrdertraversal {
         tree.root.right.left = new Node(6);
         tree.root.right.right = new Node(7);
         List<Integer> preOrderTraversalList = tree.preorderTraversalRecursive(tree.root);
-        System.out.println("****PreOrderTraversal****");
+        System.out.println("****PreOrderTraversalRecursive****");
+        System.out.println(preOrderTraversalList);
+        preOrderTraversalList = tree.preorderTraversalIterative(tree.root);
+        System.out.println("****PreOrderTraversalIterative****");
         System.out.println(preOrderTraversalList);
     }
 
