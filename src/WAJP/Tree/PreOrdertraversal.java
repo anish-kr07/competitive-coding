@@ -35,13 +35,21 @@ class TreePreOrdertraversal {
         return preOrderTraversal;
 
     }
+
     public List<Integer> preorderTraversalIterative(Node root) {
         List<Integer> preOrderTraversal = new ArrayList<>();
-        if(root == null)
-            return preOrderTraversal;
-        preOrderTraversal.add(root.val);
-        preOrderTraversal.addAll(preorderTraversalRecursive(root.left));
-        preOrderTraversal.addAll(preorderTraversalRecursive(root.right));
+        Stack<Node> stack = new Stack<>();
+        while (true){
+            while (root != null){
+                preOrderTraversal.add(root.val);
+                stack.push(root);
+                root = root.left;
+            }
+            if(stack.empty())
+                break;
+            root = stack.pop();
+            root = root.right;
+        }
         return preOrderTraversal;
 
     }
@@ -53,6 +61,8 @@ class TreePreOrdertraversal {
         tree.root.right = new Node(3);
         tree.root.left.left = new Node(4);
         tree.root.left.right = new Node(5);
+        tree.root.left.right.left = new Node(8);
+        tree.root.left.right.right = new Node(9);
         tree.root.right.left = new Node(6);
         tree.root.right.right = new Node(7);
         List<Integer> preOrderTraversalList = tree.preorderTraversalRecursive(tree.root);
