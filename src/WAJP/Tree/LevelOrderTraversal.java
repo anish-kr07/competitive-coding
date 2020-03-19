@@ -26,7 +26,9 @@ class LevelOrderTraversal {
     public List<Integer> levelOrderTraversalIterative(LevelOrderNode root) {
         List<Integer> levelOrderTraversal = new ArrayList<>();
         Queue<LevelOrderNode> queue = new LinkedList<>();
-        queue.add(root);
+        if(root == null)
+            return levelOrderTraversal;
+        queue.offer(root);
         while (!queue.isEmpty()){
             LevelOrderNode temp = queue.poll();
             levelOrderTraversal.add(temp.val);
@@ -38,6 +40,29 @@ class LevelOrderTraversal {
         }
         return levelOrderTraversal;
 
+    }
+    public List<List<Integer>> levelOrderTraversalWithSeparateLevels(LevelOrderNode root) {
+        List<List<Integer>> levelOrderTraversal = new ArrayList<>();
+        Queue<LevelOrderNode> queue = new LinkedList<>();
+        if(root == null)
+            return levelOrderTraversal;
+        queue.add(root);
+        while (!queue.isEmpty()){
+            List<Integer> leveSubList = new ArrayList<>();
+            int levelSize = queue.size();
+            for(int i = 0;i < levelSize;i++){
+                LevelOrderNode temp = queue.poll();
+                leveSubList.add(temp.val);
+
+                if(temp.left != null)
+                    queue.add(temp.left);
+                if(temp.right != null)
+                    queue.add(temp.right);
+
+            }
+            levelOrderTraversal.add(leveSubList);
+        }
+        return levelOrderTraversal;
     }
 
     public static void main(String[] args) {
@@ -52,8 +77,11 @@ class LevelOrderTraversal {
         tree.root.right.left = new LevelOrderNode(6);
         tree.root.right.right = new LevelOrderNode(7);
         List<Integer> levelOrderTraversalList = tree.levelOrderTraversalIterative(tree.root);
-        System.out.println("****PreOrderTraversalIterative****");
+        System.out.println("****LevelorderTraversalIterative****");
         System.out.println(levelOrderTraversalList);
+        List<List<Integer>> levelOrderTraversalListWithLevels = tree.levelOrderTraversalWithSeparateLevels(tree.root);
+        System.out.println("****LevelOrderTraversal With Separate Levels****");
+        System.out.println(levelOrderTraversalListWithLevels);
     }
 
 }
