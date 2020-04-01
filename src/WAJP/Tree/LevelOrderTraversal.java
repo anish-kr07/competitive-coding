@@ -41,6 +41,7 @@ class LevelOrderTraversal {
         return levelOrderTraversal;
 
     }
+
     public List<List<Integer>> levelOrderTraversalWithSeparateLevels(LevelOrderNode root) {
         List<List<Integer>> levelOrderTraversal = new ArrayList<>();
         Queue<LevelOrderNode> queue = new LinkedList<>();
