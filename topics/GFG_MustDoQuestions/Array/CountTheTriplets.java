@@ -2,7 +2,6 @@ package GFG_MustDoQuestions.Array;
 
 import java.io.DataInputStream;
 import java.io.IOException;
-import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class CountTheTriplets {
