@@ -7,12 +7,10 @@ public class FindWordsThatCanBeFormedByCharacters1160 {
     public int countCharacters(String[] words, String chars) {
         Map<Character,Integer> map = new HashMap<>();
         for(Character ch : chars.toCharArray()){
-            if(!map.containsKey(ch)){
+            if(!map.containsKey(ch))
                 map.put(ch,1);
-            }
-            else{
+            else
                 map.replace(ch,map.get(ch)+1);
-            }
         }
         int sum = 0;
         for(String st: words){
@@ -33,5 +31,13 @@ public class FindWordsThatCanBeFormedByCharacters1160 {
         }
 //        System.out.println("output "+sum );
         return sum;
+    }
+}
+
+class  Test{
+    public static void main(String[] args) {
+        LeetCode.FindWordsThatCanBeFormedByCharacters1160 obj = new LeetCode.FindWordsThatCanBeFormedByCharacters1160();
+        int result = obj.countCharacters(new String[]{"cat","bt","hat","tree"},"atach");
+        System.out.println(result);
     }
 }
