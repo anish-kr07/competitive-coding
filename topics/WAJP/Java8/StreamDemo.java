@@ -58,5 +58,13 @@ public class StreamDemo {
         DoubleSummaryStatistics summary = DoubleStream.of(10.0,100.0,50.5)
                                         .summaryStatistics();
         System.out.println(summary);
+
+        List<String> result = Stream.of("EURO/INR", "USD/AUD", "USD/GBP", "USD/EURO")
+                .filter(e -> e.length() > 7)
+                .peek(e -> System.out.println("Filtered value: " + e))
+                .map(String::toLowerCase)
+                .peek(e -> System.out.println("Mapped value: " + e))
+                .collect(Collectors.toList());
+
     }
 }
