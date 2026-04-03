@@ -24,4 +24,11 @@ public class Singelton {
         }
         return instance;
     }
+
+    public static void main(String args[]){
+        Singelton instance = Singelton.getInstance();
+        System.out.println(instance);
+        Singelton anotherInstance = Singelton.getInstance();
+        System.out.println(anotherInstance);
+    }
 }
