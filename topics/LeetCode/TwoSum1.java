@@ -37,25 +37,25 @@ public class TwoSum1 {
 class TestTwoSum1 {
     public static void main(String[] args) throws IOException {
      TwoSum1 obj = new TwoSum1();
-//     int[] output=obj.twoSum(new int[]{2,7,11,15}, 9);
-//     System.out.println("Result" + Arrays.toString(output));
-//
-//
-//     System.out.println("Lets take 2 input Integer array and target sum");
-//     BufferedReader buff = new BufferedReader(new InputStreamReader(System.in));
-//        System.out.println("Input size of the array");
-//        int n = Integer.parseInt(buff.readLine());
-//        int arr[] = new int[n];
-//        System.out.print("Enter " + n + " elements (space-separated): ");
-//        String[] str = buff.readLine().trim().split(" ");
-//        for (int i = 0; i < str.length; i++) {
-//            arr[i] = Integer.parseInt(str[i]);
-//        }
-//        System.out.println("You entered: " + Arrays.toString(arr));
-//
-//        int target = Integer.parseInt(buff.readLine());
-//        int result[]= obj.twoSum(arr, target);
-//        System.out.println("Result 2" + Arrays.toString(result));
+     int[] output=obj.twoSum(new int[]{2,7,11,15}, 9);
+     System.out.println("Result" + Arrays.toString(output));
+
+
+     System.out.println("Lets take 2 input Integer array and target sum");
+     BufferedReader buff = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Input size of the array");
+        int n = Integer.parseInt(buff.readLine());
+        int arr[] = new int[n];
+        System.out.print("Enter " + n + " elements (space-separated): ");
+        String[] str = buff.readLine().trim().split(" ");
+        for (int i = 0; i < str.length; i++) {
+            arr[i] = Integer.parseInt(str[i]);
+        }
+        System.out.println("You entered: " + Arrays.toString(arr));
+
+        int target = Integer.parseInt(buff.readLine());
+        int result[]= obj.twoSum(arr, target);
+        System.out.println("Result 2" + Arrays.toString(result));
 
         // Read and convert in one loop — no separate String[] needed
 //        StringTokenizer st = new StringTokenizer(buff.readLine());
