@@ -5,7 +5,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 class Reflection {
-    //TODO Look for access specifiers , Reflection can be used irrespective if specifiers
+    //TODO Look for access specifiers , Reflection can be used irrespective of specifiers
     private  String s;
     public Reflection(){
         s = "Anish";

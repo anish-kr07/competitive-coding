@@ -30,6 +30,7 @@ public class FindAllAnagramsInStringWithArrayList438 {
         }
         return true;
     }
+    
 }
 
 class TestFindAllAnagramsInStringWithArrayList438 {
