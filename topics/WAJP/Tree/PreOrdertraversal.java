@@ -19,7 +19,6 @@ class Node
 class TreePreOrdertraversal {
     // Root of Binary Tree
     Node root;
-
     TreePreOrdertraversal()
     {
         root = null;
@@ -38,7 +37,15 @@ class TreePreOrdertraversal {
 
     public List<Integer> preorderTraversalIterative(Node root) {
         List<Integer> preOrderTraversal = new ArrayList<>();
-        Stack<Node> stack = new Stack<>();
+        Stack<Node> stack = new Stack<>(); // stack not sued in modern java
+        /* Deque<Integer> stack = new ArrayDeque<>();
+
+        stack.push(10);      // push to top
+        stack.pop();         // remove from top
+        stack.peek();        // look at top without removing
+        stack.isEmpty();     // check empty
+
+         */
         while (true){
             while (root != null){
                 preOrderTraversal.add(root.val);

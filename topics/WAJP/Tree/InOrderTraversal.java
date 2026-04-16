@@ -36,9 +36,10 @@ public class InOrderTraversal {
 
     }
 
-    public List<Integer> inOrderTraversalIterative(TreeNode root) {
+    public List<Integer> inOrderTraversalIterative(TreeNode rootNode) {
         List<Integer> inOrderTraversal = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
+        TreeNode root= rootNode;
         while (true){
             while (root != null){
                 stack.push(root);
@@ -71,6 +72,15 @@ public class InOrderTraversal {
         inOrderTraversalList = tree.inOrderTraversalIterative(tree.root);
         System.out.println("****InOrderTraversalIterative****");
         System.out.println(inOrderTraversalList);
+        /*
+                      1
+                    /   \
+                   2     3
+                  / \   / \
+                 4   5 6   7
+                    / \
+                   8   9
+         */
     }
 
 }

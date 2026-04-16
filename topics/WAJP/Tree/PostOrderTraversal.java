@@ -52,6 +52,8 @@ public class PostOrderTraversal {
         tree.root.right = new PostOrderTreeNode(3);
         tree.root.left.left = new PostOrderTreeNode(4);
         tree.root.left.right = new PostOrderTreeNode(5);
+        tree.root.left.right.left = new PostOrderTreeNode(8);
+        tree.root.left.right.right = new PostOrderTreeNode(9);
         tree.root.right.left = new PostOrderTreeNode(6);
         tree.root.right.right = new PostOrderTreeNode(7);
         List<Integer> postOrderTraversalList = tree.postOrderTraversalRecursive(tree.root);

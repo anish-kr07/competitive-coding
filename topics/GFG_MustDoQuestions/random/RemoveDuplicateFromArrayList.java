@@ -23,6 +23,10 @@ public class RemoveDuplicateFromArrayList {
         );
         System.out.println("removeWithLinkedHasSet "+ removeWithLinkedHasSet );
 
+        //Order maintained with set
+        Set<Integer> removeWithLinkedHasSetDirect = new LinkedHashSet<>(list);
+        System.out.println("removeWithLinkedHasSet1 = " + removeWithLinkedHasSetDirect);
+
         char[] ch = "leetCode".toCharArray();
         String str = "leetcode";
 //        Stream<Character> stream = str.chars();
