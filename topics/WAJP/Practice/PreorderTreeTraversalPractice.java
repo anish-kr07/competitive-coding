@@ -1,4 +1,4 @@
-package WAJP.PracticeTreeGraph;
+package WAJP.Practice;
 
 import java.util.*;
 
